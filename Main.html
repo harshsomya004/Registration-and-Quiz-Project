@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <style>
+      body{
+        margin: 5%;
+        padding: 5%;
+        align-content: center;
+        background-color: #007bff;
+      }
+      header{
+        color: brown;
+        margin: 2px;
+        padding: 2px;
+        text-align: center;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        border: tomato;
+        border-radius: 7px;
+        border-width: 8px;
+        background-color: aliceblue;
+        
+      }
+        #div1{
+          align-self: center;
+          align-content: center;
+          color: black;
+          margin: 3px;
+          padding: 2%;
+          background-color: wheat;
+          padding-left: 40px;
+        }
+        .list{
+          background-color: aliceblue ;
+          border: brown;
+          border-radius: 5px;
+          border-width: 2px;
+          color: black;
+          font-size: 15px;
+          font-weight: 500;
+          padding: 3px;
+          margin: 5px;
+          text-align: center;
+        }
+        button{
+          color: maroon;
+        background-color: aliceblue;
+        text-overflow: ellipsis;
+        border-radius: 10px;
+        padding: 2px;
+        font-size: 18px;
+        font-weight: 100;
+        font-style: italic;
+        display: flex;
+        margin-left: 550px;
+        }
+        .logo{
+        border: white;
+        padding: 2%;
+        margin: 2%;
+        display: inline-flex;
+        background-color: white;
+        margin-left: 480px;
+      }
+      .disclaimer
+      {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+      }
+    </style>
+
+<script>
+  function submit() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const state = document.getElementById("state").value;
+
+    window.location.href = 'file:///C:/Users/ASUS/Desktop/Quiz.html'; //Link of Quiz file location according to saved position.
+    
+  }
+</script>
+    
+    <datalist id="states">
+      <option value="Andhra Pradesh" />
+      <option value="Arunachal Pradesh" />
+      <option value="Assam" />
+      <option value="Bihar" />
+      <option value="Chhattisgarh" />
+      <option value="Goa" />
+      <option value="Gujarat" />
+      <option value="Haryana" />
+      <option value="Himachal Pradesh" />
+      <option value="Jharkhand" />
+      <option value="Karnataka" />
+      <option value="Kerala" />
+      <option value="Madhya Pradesh" />
+      <option value="Maharashtra" />
+      <option value="Manipur" />
+      <option value="Meghalaya" />
+      <option value="Mizoram	Aizawl  " />
+      <option value="Nagaland" />
+      <option value="Odisha" />
+      <option value="Punjab" />
+      <option value="Rajasthan" />
+      <option value="Sikkim" />
+      <option value="Tamil Nadu" />
+      <option value="Telangana " />
+      <option value="Tripura" />
+      <option value="Uttar Pradesh" />
+      <option value="Uttarakhand" /> 
+      <option value="West Bengal" />
+    </datalist>
+  </head>
+  <body>
+    <header>
+      <h1>Registration Form</h1>
+    </header>
+    <div id="div1">
+      <ol>
+        <li class="list">
+          <h2>Enter Your Full Name</h2>
+          <input id="name" type="text" />
+        </li>
+        <li class="list">
+          <h2>Enter Your Email</h2>
+          <input id="email" type="text" />
+        </li>
+
+        <li class="list">
+          <h2>Select Your State </h2>
+          <input id="state" list="states" />
+        </li>
+      </ol>
+      <div>
+        <p class="disclaimer">
+          By Clicking Submit, Your data will sent to Techkilla and Your Quiz will start Immediately. Thank You.
+        </p>
+        <button  onclick="submit()">Submit</button>
+      </div>
+    </div>
+   
+    <footer class="logo">
+      <img src="https://techkilla.com/wp-content/uploads/2021/09/TK-LOGO_TransBG-1.png" >
+    </footer>
+  </body>
+</html>
